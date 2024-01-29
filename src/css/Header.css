@@ -192,7 +192,7 @@
     }
     .upper_navbar_mobile_view{
         display: grid;
-        grid-template-columns: 25% 25% 50%;
+        grid-template-columns: 25% 25% 45%;
         padding:15px;
 
     }
