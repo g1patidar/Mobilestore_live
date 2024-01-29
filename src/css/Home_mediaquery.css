@@ -1,6 +1,158 @@
-@media (max-width:768px){
+/* Add this media query for responsiveness */
+@media screen  and (max-width: 768px) {
+    .nav_email,
+    .nav_call,
+    .nav_profile,
+    .nav_checkout,
+    .nav_wishlist {
+      display: none; /* Hide individual items on smaller screens */
+      overflow-x: hidden;
+    }
 
-    /* ////////////////////              /////////////////// */
+    .main_header{
+      display: none;
+    }
+
+
+    .nav_line{
+        display: none;
+    }
+  
+  
+    /* Show the menu icon and hide the search input, select category, and cart on smaller screens */
+    .Search_input,
+    .Select_Category,
+    .strect_line,
+    .cart_img {
+      display: none;
+    }
+  
+    /* Show the menu icon */
+    .menu_icon {
+      display: block;
+      width: 50px;
+      margin-top: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  
+    /* Hide the main logo on smaller screens */
+    .main_logo img {
+      display: none;
+    }
+  
+    /* Show the mobile menu when the menu icon is clicked */
+    .Links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(107, 169, 210, 0.604);
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      
+    }
+
+    
+    
+    .Links li {
+        margin: 15px;
+        text-align: center;
+    }
+
+
+    /*///////////////////////// menu//////////////////////////// */
+
+
+    .main_menu {
+      width: 100%;
+      height: 150px;
+      background-color: rgba(107, 169, 210, 0.604);
+      display: block;
+      margin-top: -25px;
+
+  }
+
+  .menu_signin span{
+    margin-left: 200px;
+    margin-top: 100px;
+    display: block;
+    position: absolute;
+}
+
+.main_menu img{
+    margin-left: 25px;
+    margin-top: 50px;
+    opacity: 1.5;
+    display: block;
+    position: absolute;
+     
+}
+
+.main_logo_menu img{
+    margin-left: 50px;
+    margin-top: 14px;
+    display: block;
+    width: 90px;
+    position: absolute;
+  
+}
+
+.main_logo_menu span{
+    margin-left: 270px;
+    font-size: 20px;
+    margin-top: 50px;
+    position: absolute;
+    display: block;
+
+}
+
+
+.menu_signin img{
+    margin-left: 315px;
+    margin-top: 40px;
+   font-weight: 20px;
+   width:43px;
+    position: absolute;
+    display: block;
+}
+
+.menu_cart_img img{
+    position: absolute;
+    margin-left: 365px;
+    width: 43px;
+    margin-top: 40px;
+    display: block;
+
+}
+
+
+ .menu_input input{
+    padding: 12px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 25px;
+    margin-top: 90px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: none;
+    display: block;
+} 
+
+
+.menu_input{
+    position: absolute;
+}
+
+.menu_input img{
+    width: 30px;
+    margin-left: 360px;
+    margin-top: 97px;
+}
+
+
+/* ////////////////////              /////////////////// */
 
 
 .scoll_images {
@@ -21,7 +173,7 @@
       
       
 }
-    
+
 @keyframes an1 {
     0% {
         background-image: url(/public/images/scrollPages3.jpg);
@@ -63,7 +215,6 @@
         margin-top: -25px;
         overflow: hidden;
     }
-    
     
     .best_seller span {
         margin-left: 150px;
@@ -244,19 +395,19 @@
 }
 
 .shop_brand_name_2 span{
-   font-size: 23px;
-   margin-left: 33px;
+   font-size: 20px;
+   margin-left: 25px;
   position: absolute;
   margin-top: 10px;
  
 }
 
 .shop_brand_name_2 button{
-    padding: 8px;
-  margin-left: 1170px;
+    padding: 5px;
+  margin-left: 330px;
   background-color: rgb(0, 123, 255);
   border-radius: 5px;
-  margin-top: 6px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -351,7 +502,7 @@ font-size: 18px;
 }
 
 .realme_2_img img{
-    width: 50%;
+    width: 40%;
     height: 100%;
     margin-top: -5px;
    
@@ -465,7 +616,7 @@ font-size: 18px;
 }
 
 .realme_4_img img{
-    width: 50%;
+    width: 30%;
     height: 100%;
     margin-top: -5px;
    
@@ -495,7 +646,7 @@ font-size: 20px;
 }
 
 .Poco_section_main span{
-        font-size: 23px;
+        font-size: 20px;
        margin-left: 30px;
        width: 200px;
       
@@ -504,11 +655,11 @@ font-size: 20px;
 }
 
 .Poco_section_main button{
-    padding: 8px;
-  margin-left: 1170px;
+    padding: 5px;
+  margin-left: 330px;
   background-color: rgb(0, 123, 255);
   border-radius: 5px;
-  margin-top: 8px;
+  margin-top: 10px;
   cursor: pointer;
   border-radius: 7px;
   
