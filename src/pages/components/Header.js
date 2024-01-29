@@ -98,13 +98,13 @@ const Header = () => {
                     </div>
                     <div></div>
                     <div className="login_cart_icon_mobile_view">
-                        <Link>
+                        <Link to="loginpage">
                             <span>SignIn</span>
                             <div className="user_img_icon_mobile_view">
                                 <img width="100%" height="100%" src="./images/userimg.png" />
                             </div>
                         </Link>
-                        <Link>
+                        <Link to="cartpage">
                             <div className="cart_img_icon_mobile_view">
                                 <img width="100%" height="100%" src="./images/cart.png" />
                             </div>
