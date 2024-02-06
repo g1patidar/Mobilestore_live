@@ -1,10 +1,10 @@
 import All_pages_option from "./Admin_components/All_pages_option";
-const Home = () => {
+const Admin_Home = () => {
     return (
         <>
-        <div className="First_box">
-            
-            <All_pages_option/>   
+            <div className="First_box">
+
+                <All_pages_option />
                 <div className="First_box_sec">
                     <h1>Admin Home</h1>
 
@@ -30,8 +30,8 @@ const Home = () => {
                     </div>
 
                 </div>
-                </div>
+            </div>
         </>
     );
 }
-export default Home;
+export default Admin_Home;

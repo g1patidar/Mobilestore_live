@@ -10,16 +10,19 @@
 /* upper navbar */
 
 .upper_navbar{
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: 25% 20% 23% 32%;
     background-color: black;
-    height: 32px;
+    height: 28px;
     color: white;
     /* text-align: center; */
 
 }
-
-
+.gmail_icon_and_email{
+    display: flex;
+    align-items: center;
+}
 .gmail_icon_and_email img{
     color: white;
     margin-left: 10px;
@@ -37,7 +40,10 @@
     /* text-align: center; */
    
 }
-
+.call_icon_and_call_support{
+    display: flex;
+    align-items: center;
+}
 .call_icon_and_call_support img{
     width: 30px;
     height: 30px;
@@ -47,14 +53,28 @@
     margin-left: 15px;
 }
 
-
+.wishlist_upper_nav a{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+}
 .Wishlist_checkout_login{
     display: flex;
 
 }
+.checkout_upper_nav a{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+}
 .wishlist_upper_nav img,.checkout_upper_nav img,.login_upper_nav img{
     width: 30px;
     height: 30px;
+}
+.login_upper_nav a{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
 }
 .wishlist_upper_nav span,.checkout_upper_nav span,.login_upper_nav span{
     margin-left: 10px;
@@ -97,12 +117,15 @@
 }
 .pages_name_carticon{
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid black;
     margin-top: 20px;
 }
 .all_pages_click{
     display: flex;
-    justify-content: center;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 .all_pages_click a{
     text-decoration: none;
@@ -130,7 +153,9 @@
     grid-template-columns: 50% 50%;
 }
 
-.search_on_header{
+.search_on_header div{
+    display: flex;
+    justify-content: space-between;
     /* border-right:  1px solid black; */  
 }
 .search_on_header input{
@@ -147,7 +172,9 @@
     
 }
 .search_on_header img{
-
+    display: flex;
+    align-items: center;
+    background-size: cover;
     margin-right: 20px;
 }
 
@@ -159,8 +186,8 @@
 
 }
 .category_div_header{
-    display: grid;
-    grid-template-columns: 80% 20%;
+    display: flex;
+    justify-content: space-between;
 }
 .category_div_header span{
     display: flex;
@@ -187,12 +214,14 @@
     }
     .Mobile_view_navbar{
         display: block;
+        box-sizing: border-box;
         /* justify-content: flex-start; */
         background-color: rgba(107, 169, 210, 0.604);
     }
     .upper_navbar_mobile_view{
-        display: grid;
-        grid-template-columns: 25% 25% 45%;
+        display: flex;
+        justify-content: space-between;
+        grid-template-columns: 25% 35% 40%;
         padding:15px;
 
     }
@@ -200,12 +229,12 @@
         display: flex;
     }
     .menu_button_mobile_view{
-        width: 50px ;
-        height: 60px ;
+        width: 40px ;
+        height: 50px ;
     }
     .weblogo_button_mobile_view{
-        width: 70px ;
-        height: 60px ;
+        width: 60px ;
+        height: 50px ;
         margin-left: 15px;
     }
 
@@ -222,13 +251,13 @@
     }
     .user_img_icon_mobile_view{
         /* border: 1px solid black; */
-        width: 60px ;
-        height: 60px ;
+        width: 50px ;
+        height: 50px ;
     }
     .cart_img_icon_mobile_view{
         /* border: 1px solid black; */
-        width: 50px ;
-        height: 50px ;
+        width: 40px ;
+        height: 40px ;
     }
 
     .input_search_box_searchicon{

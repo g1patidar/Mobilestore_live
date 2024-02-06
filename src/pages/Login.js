@@ -32,7 +32,8 @@ const Login = () => {
             </div>
             <div id="keep_box">
               {/* <div></div> */}
-              <p id="Keep_line_box"><input className="checkbox_login" type="checkbox" /> &nbsp; Keep me logged in </p>
+              <p id="Keep_line_box">
+                <input className="checkbox_login" type="checkbox" /> &nbsp; Keep me logged in </p>
               <p id="Forgot_pwd">Forgot your Password</p>
             </div>
             <button id="Login_btn">

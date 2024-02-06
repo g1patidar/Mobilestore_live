@@ -100,11 +100,11 @@
     #keep_box2
     {
        width: 90%;
-       margin-left: 2%;
+       margin-left: 5%;
        margin-top: 5%;
     }
 
-    #keep_box2 div {
+    #keep_box2 input {
         width: 15px;
         height: 15px;
     }

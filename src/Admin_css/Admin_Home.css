@@ -4,6 +4,7 @@
 
 }
 .First_box {
+    width: 100%;
     flex-direction: row;
     display: flex;
      margin-right: 0px;

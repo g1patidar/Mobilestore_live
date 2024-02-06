@@ -35,7 +35,8 @@ const Registration = () => {
               <input type="text" placeholder="Enter Your Address" />
             </div>
             <div id="keep_box2">
-              <div></div>
+              <input type="checkbox" /> 
+              &nbsp;&nbsp;
               <p id="Keep_line_box2">Keep me logged in </p>
             </div>
             <button id="Registration_btn2">

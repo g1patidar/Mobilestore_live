@@ -7,13 +7,15 @@ const Header = () => {
             {/* Desktop screen view */}
             <nav className="size_navbar">
                 <div className="upper_navbar">
-                    <div className="gmail_icon_and_email">
-                        <img src="./images/gmail3.png" />
-                        <span>Email : jeevan@123gmail.com</span>
-                    </div>
-                    <div className="call_icon_and_call_support">
-                        <img src="./images/call.png" />
-                        <span>Call Support : 1234567890</span>
+                    <div style={{display:"flex"}}>
+                        <div className="gmail_icon_and_email">
+                            <img src="./images/gmail3.png" />
+                            <span>Email : jeevan@123gmail.com</span>
+                        </div>
+                        <div className="call_icon_and_call_support">
+                            <img src="./images/call.png" />
+                            <span>Call Support : 1234567890</span>
+                        </div>
                     </div>
                     <div></div>
                     <div className="Wishlist_checkout_login">
@@ -54,7 +56,7 @@ const Header = () => {
                                 <Link><li>Blog</li></Link>
                                 <Link><li>Contact Us</li></Link>
                                 <Link><li>About Us</li></Link>
-                                
+
                             </div>
                             <div className="carticon_on_header">
                                 <Link to="cartpage"><img src="./images/cart.png" /></Link>
@@ -64,14 +66,14 @@ const Header = () => {
                             <div className="search_on_header">
                                 <div style={{ display: "flex" }}>
                                     <input id="search_on_header" placeholder="Search Products" type="text" />
-                                    <label className="searchicon_on_header" for="search_on_header"><img src="./images/search.png" width="30px" height="30px" /></label>
+                                    <label className="searchicon_on_header" for="search_on_header"><img src="./images/search.png" width="25px" height="25px" /></label>
                                 </div>
                             </div>
                             <div className="category_on_header">
                                 <div className="category_div_header">
                                     <span>Category</span>
                                     <span className="arrowicon_header">
-                                    <Link> <img src="./images/downside.png" /></Link>   
+                                        <Link> <img src="./images/downside.png" /></Link>
                                     </span>
                                 </div>
                             </div>
@@ -82,7 +84,7 @@ const Header = () => {
                 </div>
             </nav>
 
-        {/* mobile_view_navbar */}
+            {/* mobile_view_navbar */}
 
             <nav className="Mobile_view_navbar">
                 <div className="upper_navbar_mobile_view">
@@ -112,12 +114,12 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="input_search_box_searchicon">
-                   <div className="input_search_box5">
-                        <input id="search_on_mobile_view" type="text" placeholder="Search here"/>
-                   </div>
-                   <label for="search_on_mobile_view" className="searchicon_box5">
+                    <div className="input_search_box5">
+                        <input id="search_on_mobile_view" type="text" placeholder="Search here" />
+                    </div>
+                    <label for="search_on_mobile_view" className="searchicon_box5">
                         <img width="100%" height="100%" src="./images/search.png" />
-                   </label>
+                    </label>
                 </div>
             </nav>
         </>

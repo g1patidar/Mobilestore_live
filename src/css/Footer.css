@@ -6,7 +6,8 @@
 .footer-div{
     padding: 20px;
     display: grid;
-    grid-template-columns: 330px 270px 280px 230px 230px;
+    /* grid-template-columns: 330px 270px 280px 230px 230px; */
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .socialmedia-weblogo{
     padding:0px 30px;
@@ -28,6 +29,9 @@
     height: 60px;
     padding: 10px;
 }
+.arrow{
+    display: none;
+}
 
 
 @media (max-width:768px){
@@ -37,6 +41,7 @@
         padding: 0px;
     }
     .footer-div{
+        box-sizing: border-box;
         display: block;
         padding-top: 0px;
     }
@@ -45,24 +50,13 @@
     }
     .company-detail,.company-information,.company-contact,.company-services{
         display: flex;
+        justify-content: space-between;
         padding-top: 10px;
     }
     .arrow {
         display: flex;
-        align-items: center;
-    }
-    .company-detail .arrow{
-        margin-left: 163px;
-    }
-    .company-information .arrow{
-        margin-left: 137px;
-    }
-    .company-contact .arrow{
-        margin-left: 180px;
-    }
-    .company-services .arrow{
-        margin-left: 176px;
-    }
+     }
+    
    
 }
 

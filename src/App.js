@@ -70,17 +70,18 @@ const App=()=>{
         <Route path="/loginpage" element={<Login/>}/>
         <Route path="/registration" element={<Registration/>}/>
 
-        <Route path="/admin_layout" element={<Admin_Layout/>}>
+      </Routes>
+
+      <Routes>
+        <Route  path="/admin_layout" element={<Admin_Layout/>}>
           <Route index element={<Admin_Home/>}/>
           <Route path="/admin_layout/admin_home" element={<Admin_Home/>}/>
           <Route path="/admin_layout/admin_addproduct" element={<AddProduct/>}/>
-          <Route path="/admin_layout/admin_oderdetail" element={<Admin_Order_detail/>}/>
           <Route path="/admin_layout/admin_brand" element={<Brand/>}/>
           <Route path="/admin_layout/admin_coupon" element={<Coupon/>}/>
+          <Route path="/admin_layout/admin_oderdetail" element={<Admin_Order_detail/>}/>
         </Route>
-        
       </Routes>
-
     </BrowserRouter>
     
     </>
